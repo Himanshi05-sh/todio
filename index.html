@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <div class="logo">Product Detail Page</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li style="position: relative;">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" data-count="0">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="img/p1.png" alt="Product Image">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="img/p1.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/p2.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/p3.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/p4.png" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url">Home > Product > T-Shirt</div>
+            <div class="pname">T-Shirts for Men</div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">Rs 40</div>
+            <div class="size">
+                <p>Size :</p>
+                <div class="psize">M</div>
+                <div class="psize">L</div>
+                <div class="psize">XL</div>
+                <div class="psize">XXL</div>
+            </div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+                <button class="description-btn">Product Description</button>
+<div class="product-description" style="display:none;">
+    <h3>Product Description</h3>
+    <p>This T-Shirt is made of high-quality fabric, ensuring comfort and durability. Perfect for casual outings or sports.</p>
+    <h4>Features:</h4>
+    <ul>
+        <li>100% Cotton for breathability</li>
+        <li>Available in multiple sizes: M, L, XL, XXL</li>
+        <li>Soft touch with a relaxed fit</li>
+        <li>Machine washable and easy to care for</li>
+    </ul>
+    <h4>Benefits:</h4>
+    <ul>
+        <li>Keep cool during hot days with breathable material</li>
+        <li>Stylish and versatile for various occasions</li>
+        <li>Durable fabric that withstands everyday wear</li>
+    </ul>
+</div> 
+            <div class="review-section">
+                <button class="see-reviews-btn">See Reviews</button>
+                <div class="reviews" style="display: none;">
+                    <div class="review">
+                        <strong>Mohit</strong>
+                        <p>This t-shirt is amazing! The quality is great and fits perfectly.</p>
+                    </div>
+                    <div class="review">
+                        <strong>Smita</strong>
+                        <p>Very comfortable and stylish. Highly recommend!</p>
+                    </div>
+                </div>
+                <button class="add-review-btn">Add Review</button>
+                <div class="review-form" style="display: none;">
+                    <input type="text" id="reviewer-name" placeholder="Your Name" required>
+                    <textarea id="review-text" placeholder="Your Review" required></textarea>
+                    <button class="submit-review-btn">Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
